@@ -19,6 +19,9 @@ body{
     z-index: 2;
 }
 @media screen and (max-width: 858px){
+    body{
+        overflow-x: hidden;
+    }
     .sidebar{
         display: none;
     }
@@ -31,7 +34,7 @@ body{
         background-size: cover;
         cursor: pointer;
         margin-left: 12px;
-        padding-top: 20px;  
+        padding-top: 40px;  
     }
 }
 .logo{
@@ -64,46 +67,85 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+@media screen and (max-width: 858px){
+    .header{
+        width: 100vw;
+        height: 60vh;
+        background-position: center left;
+    }
+}
 
-/* ABOUT ME */
+/* TITLE */
+.title{
+    width: 100vw;
+    padding: 50px 0px 50px 120px;
+}
 .myImg img{
-    width: 60%;
-    margin-left: 30%;
+    width: 24%;
+    float: left;
     border-radius: 50%;
     box-shadow: 0px 0px 10px rgb(109, 109, 109);
     border: 5px solid rgb(146, 145, 145);
-    margin-top: 20px;
-}
-.portfolioImg{
-    padding: 30px 160px 0px 0px;
-    /* padding: top right bottom left; */
 }
 .portfolioImg img{
+    margin: 20px 0px 0px 20px;
     width: 800px;
     height: 216px;
+}
+@media screen and (max-width: 858px){
+    .title{
+        width: 100vw;
+        padding: 30px 30px 0px 30px;
+    }
+    .myImg{
+        margin-left: 25%;
+    }
+    .myImg img{
+        width: 50%;
+    }
+    .portfolioImg{
+        width: 100vw;
+    }
+    .portfolioImg img{
+        margin: 0px;
+        width: 80vw;
+        height: 10vh;
+    }
+}
+
+/* ABOUT ME */
+.aboutMe{
+    width: 100vw;
+    padding: 50px 0px 0px 120px;
 }
 .aboutMe_title{
     height: 45px;
     font-family: 'Raleway', sans-serif;
     padding-left: 10px;
-    margin: 50px 0px 0px 120px;
     font-weight: 600;
     border-left: 5px solid green;
 }   
 .detail{
-    margin-left: 120px;
     font-family: 'PT Sans', sans-serif;
     font-size: 21px;
-    padding: 20px 120px 0px 0px;
     font-weight: 300;
     color: rgb(77, 77, 77);
+    padding-right: 120px;
+}
+@media screen and (max-width: 858px){
+    .aboutMe{
+        width: 100vw;
+        padding: 50px 0px 0px 30px;
+    }
+    .detail{
+        padding-right: 60px;
+    }
 }
 
 /* TECH AND TOOLS */
 .techTool{
-    margin-left: 120px;
-    padding: 50px 150px 0px 0px;
-    width:100vw;
+    width: 100vw;
+    padding: 50px 0px 0px 120px;
 }
 .techTool_title{
     height: 45px;
@@ -126,12 +168,26 @@ body{
     color: #404040;
     text-decoration: none;
     cursor: pointer;
-  }
+}
+@media screen and (max-width: 858px){
+    .techTool{
+        width: 100vw;
+        padding: 50px 0px 0px 30px;
+    }
+    .techTool_title{
+        font-size: 36px;
+    }    
+    .techTool_lang {
+        padding: 10px 60px 0px 30px;
+    }
+    .techTool_lang div img{
+        margin: 0px 0px 0px 0px;
+    }
+}
 
 /* JOURNEY */
 .journey{
-    margin-left: 120px;
-    padding: 50px 150px 0px 0px;
+    padding: 50px 150px 0px 120px;
     width:100vw;
 }
 .journey_title{
@@ -240,8 +296,16 @@ body{
 }
 @media screen and (max-width: 858px){
     .journey{
-        float: left;
         width:100vw;
+        padding: 50px 0px 0px 30px;
+    }
+    .journey_sub_title{
+        margin-left: 10px;
+    }
+    .timeline_edu{
+        width: 30%;
+        float: left;
+        padding: 0px 0px 0px 0px;
     }
     .institute_title{
         font-size: 20px;
@@ -257,64 +321,28 @@ body{
         margin-left: 0px;
         width: 70%;
     }
-    .timeline_detail_vvrs{
+    .timeline_detail_ais{
         margin-top: 85px;
         margin-left: 0px;
+        width: 70%;
     }
-    .timeline_detail_bps{
-        margin-top: 75px;
-        margin-left: 0px;
-    }
-    .timeline_detail_genesis{
-        margin-top: 90px;
+    .timeline_detail_jnv{
+        margin-top: 20px;
         margin-left: 0px;
         width: 70%;
     }
-    .timeline_detail_acm{
-        margin-top: 95px;
-        margin-left: 0px;
-        width: 70%;
-    }
-}
-@media screen and (max-width: 400px){
-    .line{
-        height: 180px;
-        margin-left: 40px;
-    }
-    .journey{
+    .timeline_exp{
+        width: 30%;
         float: left;
-        width:100vw;
-    }
-    .institute_title{
-        font-size: 20px;
-        font-weight: bold;
-    }
-    .institute_location{
-        font-size: 18px;
-    }
-    .details{
-        font-size: 16px;
-    }
-    .timeline_detail_kiit{
-        width: 60%;
-    }
-    .timeline_detail_vvrs{
-        margin-top: 75px;
-        width: 60%;
-    }
-    .timeline_detail_bps{
-        margin-top: 40px;
-        width: 60%;
+        padding: 0px 0px 0px 0px;
     }
     .timeline_detail_genesis{
-        margin-top: 100px;
-        width: 60%;
-    }
-    .timeline_detail_acm{
-        margin-top: 105px;
-        width: 60%;
+        margin-top: 0px;
+        margin-left: 0px;
+        width: 70%;
     }
 }
+
 /*FOOTER*/
 .footer{
     float: left;
@@ -375,16 +403,27 @@ body{
 }
 @media screen and (max-width: 858px){
     .footer{
+        width:100vw;
+        padding: 0px 0px 0px 30px;
         margin-left: 0px;
     }
     #footer_line{
         display: none;
     }
     .Collaboration{
-        padding: 30px 30px 0px 30px;
+        padding: 30px 0px 0px 0px;
+        width: 100vw;
+    }
+    .collab_title{
+        width: 100vw;
+    }
+    .collab_detail{
+        width: 100vw;
+        font-size: 18px;
     }
     .copyright{
-        padding: 30px 0px 20px 20px;
+        padding: 30px 0px 20px 0px;
+        width: 100vw;
     }
     .social_media_logo{
         width: 30px;
