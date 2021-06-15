@@ -103,9 +103,6 @@ body{
     .myImg img{
         width: 50%;
     }
-    .portfolioImg{
-        width: 100vw;
-    }
     .portfolioImg img{
         margin: 0px;
         width: 80vw;
@@ -178,7 +175,7 @@ body{
         font-size: 36px;
     }    
     .techTool_lang {
-        padding: 10px 60px 0px 30px;
+        padding: 10px 30px 0px 30px;
     }
     .techTool_lang div img{
         margin: 0px 0px 0px 0px;
